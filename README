@@ -1,0 +1,1 @@
+rails new minha_app -m https://raw.github.com/rodrigodealer/rails_template/master/template.rb
