@@ -1,12 +1,14 @@
 run "rm -rf README public/index.html public/javascripts/* test app/views/layouts/*"
-
-gem "rspec"
-gem "rspec-rails"
-gem "factory_girl"
-gem "database_cleaner"
+group :test do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "factory_girl"
+  gem "database_cleaner"
+  gem "simplecov"
+end
 gem "devise"
 gem "mysql2"
-gem "simplecov"
+
 run "bundle install"
 
 rake "db:create", :env => 'development'
