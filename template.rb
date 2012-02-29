@@ -1,11 +1,9 @@
 run "rm -rf README public/index.html public/javascripts/* test app/views/layouts/*"
-group :test do
-  gem "rspec"
-  gem "rspec-rails"
-  gem "factory_girl"
-  gem "database_cleaner"
-  gem "simplecov"
-end
+gem "rspec", :group => [ :development, :test ]
+gem "rspec-rails", :group => [ :development, :test ]
+gem "factory_girl", :group => [ :development, :test ]
+gem "database_cleaner", :group => [ :development, :test ]
+gem "simplecov", :group => [ :development, :test ]
 gem "devise"
 gem "mysql2"
 
